@@ -23,5 +23,6 @@ def on_button_pressed_b():
 input.on_button_pressed(Button.B, on_button_pressed_b)
 
 def on_forever():
-    pass
+    if input.is_gesture(Gesture.SHAKE):
+        pass
 basic.forever(on_forever)
